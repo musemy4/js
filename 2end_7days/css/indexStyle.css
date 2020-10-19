@@ -1,0 +1,111 @@
+    @font-face{
+        font-family:"쌍문동";
+        src: url("../font/Typo_SsangmunDongB.ttf");
+    }
+    @font-face{
+        font-family:"오복상회";
+        src: url("../font/210오복상회R.ttf");
+    }
+    
+    .title_wrapper{
+        display:flex;
+        height:20vh;
+        justify-content: center;/*가로중앙*/
+        align-items:center;/*세로중앙*/
+        font-family: "쌍문동";
+    }
+    .wrapper{
+        display:flex;
+        height:25vh;
+        justify-content: center;/*가로중앙*/
+        font-family: "오복상회";
+    }
+
+   
+
+    .grade{
+        display:inline-block;
+        text-align:center;
+        background-color: cadetblue;
+        padding:10px;
+        margin:0 10px;
+        width:150px;
+        height: 140px;
+        z-index: 3;
+    }
+    #now{
+        font-size:13px;
+    }
+
+    /*  */
+
+    span{
+        font-size:23px;
+    }
+
+    span#where{
+        color:indianred;
+        font-size: 50px;
+    }
+
+    .card{
+        height:50px;
+        width:300px;
+    }
+    
+    
+    /*  */
+    
+    #main_weather{
+        display:flex;
+        justify-content: center;/*가로중앙*/
+        font-size:50px;
+        padding:30px;
+    }
+
+    #howsweather{
+        position:absolute;
+        width:90px;
+        z-index:-3;
+        animation: rotate_image 10s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes rotate_image{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+
+    #howsmisae{
+        z-index:3px;
+    }
+
+    .info_detail{
+        font-size:20px;
+    }
+
+    .Grade_detail{
+        margin:13px 0;
+        color:white;
+        font-size:50px;
+    }
+
+    #when{
+        cursor:pointer;
+        display:inline-block;
+        color:darkslategray;
+        border:6px solid #2db400;
+        padding:5px 10px;;
+        margin:3px;
+        text-align:center;
+    }
+
+    .misaeGrade{
+        display:block;
+        padding-left:25px;
+        width:80px;
+        height:auto;
+        margin:10px;
+    }
